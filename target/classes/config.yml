@@ -1,0 +1,27 @@
+# Cấu hình cho AcuPraticeCore
+# Phiên bản: 1.0
+
+# Cấu hình vị trí spawn
+spawn:
+  world: world
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+
+# Cấu hình godmode
+godmode:
+  enabled-players: []
+  
+# Cấu hình tốc độ mặc định
+speed:
+  default-walk: 0.2
+  default-fly: 0.1
+  max-value: 10
+  
+# Cấu hình các chức năng khác
+features:
+  spectator:
+    enabled: true
+  teleport-on-join: false
