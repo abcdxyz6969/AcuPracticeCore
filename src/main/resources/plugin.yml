@@ -1,16 +1,61 @@
-# Phần đầu giữ nguyên
-
+name: AcuPraticeCore
+version: '${project.version}'
+main: me.rioeyu.acuPraticeCore.AcuPraticeCore
+api-version: '1.16'
+authors: [rioeyu]
+description: Core plugin for practice server
 commands:
-  # Các lệnh khác giữ nguyên
-
+  spectator:
+    description: Chuyển sang chế độ theo dõi người chơi khác
+    usage: /spectator <tên người chơi>
+    aliases: [spec, watch]
+    permission: acupracticecore.cmd.spectator
+  spawn:
+    description: Dịch chuyển đến spawn
+    usage: /spawn
+    permission: acupracticecore.cmd.spawn
+  setspawn:
+    description: Đặt vị trí spawn mới
+    usage: /setspawn
+    permission: acupracticecore.cmd.setspawn
+  apcreload:
+    description: Tải lại cấu hình plugin
+    usage: /apcreload
+    permission: acupracticecore.cmd.reload
+  godmode:
+    description: Bật/tắt chế độ bất tử
+    usage: /godmode
+    aliases: [god]
+    permission: acupracticecore.cmd.godmode
+  speed:
+    description: Thay đổi tốc độ di chuyển của người chơi
+    usage: /speed <0-10> [fly/walk]
+    permission: acupracticecore.cmd.speed
   feed:
     description: Làm đầy thanh đói cho bản thân hoặc người chơi khác
-    usage: /<command> [player|all]
+    usage: /feed [player|all]
     aliases: [eat]
+    permission: acupracticecore.cmd.feed
 
 permissions:
-  # Các quyền khác giữ nguyên
-
+  acupracticecore.cmd.spectator:
+    description: Cho phép sử dụng lệnh /spectator
+    default: op
+  acupracticecore.cmd.spawn:
+    description: Cho phép sử dụng lệnh /spawn
+    default: true
+  acupracticecore.cmd.setspawn:
+    description: Cho phép sử dụng lệnh /setspawn
+    default: op
+  acupracticecore.cmd.reload:
+    description: Cho phép tải lại cấu hình plugin
+    default: op
+  acupracticecore.cmd.godmode:
+    description: Cho phép sử dụng lệnh godmode
+    default: op
+  acupracticecore.cmd.speed:
+    description: Cho phép thay đổi tốc độ di chuyển
+    default: op
   acupracticecore.cmd.feed:
     description: Cho phép người chơi sử dụng lệnh feed để làm đầy thanh đói của bản thân
     default: op
