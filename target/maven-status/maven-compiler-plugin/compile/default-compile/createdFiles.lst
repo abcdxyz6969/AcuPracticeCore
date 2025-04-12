@@ -2,7 +2,9 @@ me\rioeyu\acuPraticeCore\commands\APCReloadCommand.class
 me\rioeyu\acuPraticeCore\commands\SpawnCommand$1.class
 me\rioeyu\acuPraticeCore\tabcomplete\SpeedTabCompleter.class
 me\rioeyu\acuPraticeCore\commands\GodModeCommand.class
+me\rioeyu\acuPraticeCore\commands\FeedCommand.class
 me\rioeyu\acuPraticeCore\listeners\GodModeListener.class
+me\rioeyu\acuPraticeCore\tabcomplete\FeedTabCompleter.class
 me\rioeyu\acuPraticeCore\commands\SpectatorCommand.class
 me\rioeyu\acuPraticeCore\commands\SetSpawnCommand.class
 me\rioeyu\acuPraticeCore\commands\SpawnCommand.class

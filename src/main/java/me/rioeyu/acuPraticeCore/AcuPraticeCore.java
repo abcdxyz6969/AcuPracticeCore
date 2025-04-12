@@ -2,6 +2,7 @@ package me.rioeyu.acuPraticeCore;
 
 import me.rioeyu.acuPraticeCore.commands.*;
 import me.rioeyu.acuPraticeCore.listeners.*;
+import me.rioeyu.acuPraticeCore.tabcomplete.FeedTabCompleter;
 import me.rioeyu.acuPraticeCore.tabcomplete.SpeedTabCompleter;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -33,6 +34,8 @@ public class AcuPraticeCore extends JavaPlugin {
         getCommand("godmode").setExecutor(new GodModeCommand(this));
         getCommand("speed").setExecutor(new SpeedCommand(this));
         getCommand("speed").setTabCompleter(new SpeedTabCompleter());
+        getCommand("feed").setExecutor(new FeedCommand(this));
+        getCommand("feed").setTabCompleter(new FeedTabCompleter());
 
         // Đăng ký các sự kiện
         getServer().getPluginManager().registerEvents(new SpectatorListener(this), this);
